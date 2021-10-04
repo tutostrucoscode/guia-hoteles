@@ -26,7 +26,11 @@ footer {
   padding: right 1px;
 }
 
-.image-z{
+.image-z {
   width: 100%;
   height: 500px;
+}
+
+.tab-content {
+  padding-top: 10px;
 }

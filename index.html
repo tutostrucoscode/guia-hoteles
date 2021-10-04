@@ -12,285 +12,504 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css"
+    />
     <title>Guia Hoteles</title>
   </head>
   <body>
-
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a href="#" class="navbar-brand">Hoteles</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">Nosotros</a></li>
-          <li class="nav-item"><a href="precios.html" class="nav-link">Precios</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Terminos y Condiciones</a></li>
-          <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a href="precios.html" class="nav-link">Precios</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Terminos y Condiciones</a>
+          </li>
+          <li class="nav-item">
+            <a href="contacto.html" class="nav-link">Contacto</a>
+          </li>
         </ul>
       </div>
     </nav>
-    
+
     <div class="jumbotron">
       <h1>Hoteles</h1>
     </div>
 
     <div class="container">
-
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item active" aria-current="page">Home</li>
         </ol>
       </nav>
 
-      <div class="d-flex">
-        <div class="col-sm-4">
+      <div class="row">
+        <div class="col-sm-4"><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">Como funciona?</button></div>
+        <div class="col-sm-4"><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="multiCollapse2">Donde puedo reservar?</button></div>
+        <div class="col-sm-4"><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multiCollapse3">Como pago?</button></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 collapse multi-collapse" id="funciona">
           <p>
             <h3>Como funciona?</h3>
-            <p>Busca los hoteles de acuerdo a tu preferencia</p>
+            <p>Busca los hoteles de acuerdo a tu preferencia.</p>
           </p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 collapse multi-collapse" id="reserva">
           <p>
             <h3>Donde puedo reservar?</h3>
-            <p>Eliga la ciudad que te interese y luego realiza la reserva con tus datos.</p>
+            <p>Elija la ciudad que te interese y luego realiza la reservacion.</p>
           </p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 collapse multi-collapse" id="pago">
           <p>
             <h3>Como pago?</h3>
             <p>Utiliza tu tarjeta favorita.</p>
           </p>
         </div>
       </div>
-
-      <hr> 
-
-      <img src="images/playa1.jpg" alt="Responsive image" class="img-fluid image-z">
+      <hr>
 
       <div class="d-flex flex-wrap flex-row-reverse">
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-
-          <img src="images/playa2.jpg" alt="Responsive image" class="card-img-top">
-          <div class="card-header">
-            España
-          </div>
+        <div
+          class="
+            card card-hotel
+            d-flex
+            flex-column
+            justify-content-between
+            ml-2
+          "
+        >
+          <img
+            src="images/playa2.jpg"
+            alt="Responsive image"
+            class="card-img-top"
+          />
+          <div class="card-header">España</div>
           <div class="card-body">
             <h5 class="card-title">Hotel Barcelona</h5>
-            <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
+            <p class="card-text">
+              Hotel ubicado en pleno centro de Barcelona a pocos metros de la
+              playa.
+            </p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span>Reservar</button>
+            <button class="btn btn-primary btn-reserva">
+              <span class="oi oi-plus"></span>Reservar
+            </button>
           </div>
         </div>
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-
-          <img src="images/playa2.jpg" alt="Responsive image" class="card-img-top">
-          <div class="card-header">
-            España
-          </div>
+        <div
+          class="
+            card card-hotel
+            d-flex
+            flex-column
+            justify-content-between
+            ml-2
+          "
+        >
+          <img
+            src="images/playa2.jpg"
+            alt="Responsive image"
+            class="card-img-top"
+          />
+          <div class="card-header">España</div>
           <div class="card-body">
             <h5 class="card-title">Hotel Barcelona</h5>
-            <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
+            <p class="card-text">
+              Hotel ubicado en pleno centro de Barcelona a pocos metros de la
+              playa.
+            </p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span>Reservar</button>
+            <button class="btn btn-primary btn-reserva">
+              <span class="oi oi-plus"></span>Reservar
+            </button>
           </div>
         </div>
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-
-          <img src="images/playa2.jpg" alt="Responsive image" class="card-img-top">
-          <div class="card-header">
-            España
-          </div>
+        <div
+          class="
+            card card-hotel
+            d-flex
+            flex-column
+            justify-content-between
+            ml-2
+          "
+        >
+          <img
+            src="images/playa2.jpg"
+            alt="Responsive image"
+            class="card-img-top"
+          />
+          <div class="card-header">España</div>
           <div class="card-body">
             <h5 class="card-title">Hotel Barcelona</h5>
-            <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
+            <p class="card-text">
+              Hotel ubicado en pleno centro de Barcelona a pocos metros de la
+              playa.
+            </p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span>Reservar</button>
+            <button class="btn btn-primary btn-reserva">
+              <span class="oi oi-plus"></span>Reservar
+            </button>
           </div>
         </div>
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-
-          <img src="images/playa2.jpg" alt="Responsive image" class="card-img-top">
-          <div class="card-header">
-            España
-          </div>
+        <div
+          class="
+            card card-hotel
+            d-flex
+            flex-column
+            justify-content-between
+            ml-2
+          "
+        >
+          <img
+            src="images/playa2.jpg"
+            alt="Responsive image"
+            class="card-img-top"
+          />
+          <div class="card-header">España</div>
           <div class="card-body">
             <h5 class="card-title">Hotel Barcelona</h5>
-            <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
+            <p class="card-text">
+              Hotel ubicado en pleno centro de Barcelona a pocos metros de la
+              playa.
+            </p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span>Reservar</button>
+            <button class="btn btn-primary btn-reserva">
+              <span class="oi oi-plus"></span>Reservar
+            </button>
           </div>
         </div>
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-
-          <img src="images/playa2.jpg" alt="Responsive image" class="card-img-top">
-          <div class="card-header">
-            España
-          </div>
+        <div
+          class="
+            card card-hotel
+            d-flex
+            flex-column
+            justify-content-between
+            ml-2
+          "
+        >
+          <img
+            src="images/playa2.jpg"
+            alt="Responsive image"
+            class="card-img-top"
+          />
+          <div class="card-header">España</div>
           <div class="card-body">
             <h5 class="card-title">Hotel Barcelona</h5>
-            <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
+            <p class="card-text">
+              Hotel ubicado en pleno centro de Barcelona a pocos metros de la
+              playa.
+            </p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span>Reservar</button>
+            <button class="btn btn-primary btn-reserva">
+              <span class="oi oi-plus"></span>Reservar
+            </button>
           </div>
         </div>
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-
-          <img src="images/playa2.jpg" alt="Responsive image" class="card-img-top">
-          <div class="card-header">
-            España
-          </div>
+        <div
+          class="
+            card card-hotel
+            d-flex
+            flex-column
+            justify-content-between
+            ml-2
+          "
+        >
+          <img
+            src="images/playa2.jpg"
+            alt="Responsive image"
+            class="card-img-top"
+          />
+          <div class="card-header">España</div>
           <div class="card-body">
             <h5 class="card-title">Hotel Barcelona</h5>
-            <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
+            <p class="card-text">
+              Hotel ubicado en pleno centro de Barcelona a pocos metros de la
+              playa.
+            </p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span>Reservar</button>
+            <button class="btn btn-primary btn-reserva">
+              <span class="oi oi-plus"></span>Reservar
+            </button>
           </div>
         </div>
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-
-          <img src="images/playa2.jpg" alt="Responsive image" class="card-img-top">
-          <div class="card-header">
-            España
-          </div>
+        <div
+          class="
+            card card-hotel
+            d-flex
+            flex-column
+            justify-content-between
+            ml-2
+          "
+        >
+          <img
+            src="images/playa2.jpg"
+            alt="Responsive image"
+            class="card-img-top"
+          />
+          <div class="card-header">España</div>
           <div class="card-body">
             <h5 class="card-title">Hotel Barcelona</h5>
-            <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
+            <p class="card-text">
+              Hotel ubicado en pleno centro de Barcelona a pocos metros de la
+              playa.
+            </p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span>Reservar</button>
+            <button class="btn btn-primary btn-reserva">
+              <span class="oi oi-plus"></span>Reservar
+            </button>
           </div>
         </div>
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-
-          <img src="images/playa2.jpg" alt="Responsive image" class="card-img-top">
-          <div class="card-header">
-            España
-          </div>
+        <div
+          class="
+            card card-hotel
+            d-flex
+            flex-column
+            justify-content-between
+            ml-2
+          "
+        >
+          <img
+            src="images/playa2.jpg"
+            alt="Responsive image"
+            class="card-img-top"
+          />
+          <div class="card-header">España</div>
           <div class="card-body">
             <h5 class="card-title">Hotel Barcelona</h5>
-            <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
+            <p class="card-text">
+              Hotel ubicado en pleno centro de Barcelona a pocos metros de la
+              playa.
+            </p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span>Reservar</button>
+            <button class="btn btn-primary btn-reserva">
+              <span class="oi oi-plus"></span>Reservar
+            </button>
           </div>
         </div>
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-
-          <img src="images/playa2.jpg" alt="Responsive image" class="card-img-top">
-          <div class="card-header">
-            España
-          </div>
+        <div
+          class="
+            card card-hotel
+            d-flex
+            flex-column
+            justify-content-between
+            ml-2
+          "
+        >
+          <img
+            src="images/playa2.jpg"
+            alt="Responsive image"
+            class="card-img-top"
+          />
+          <div class="card-header">España</div>
           <div class="card-body">
             <h5 class="card-title">Hotel Barcelona</h5>
-            <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
+            <p class="card-text">
+              Hotel ubicado en pleno centro de Barcelona a pocos metros de la
+              playa.
+            </p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span>Reservar</button>
+            <button class="btn btn-primary btn-reserva">
+              <span class="oi oi-plus"></span>Reservar
+            </button>
           </div>
         </div>
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-
-          <img src="images/playa2.jpg" alt="Responsive image" class="card-img-top">
-          <div class="card-header">
-            España
-          </div>
+        <div
+          class="
+            card card-hotel
+            d-flex
+            flex-column
+            justify-content-between
+            ml-2
+          "
+        >
+          <img
+            src="images/playa2.jpg"
+            alt="Responsive image"
+            class="card-img-top"
+          />
+          <div class="card-header">España</div>
           <div class="card-body">
             <h5 class="card-title">Hotel Barcelona</h5>
-            <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
+            <p class="card-text">
+              Hotel ubicado en pleno centro de Barcelona a pocos metros de la
+              playa.
+            </p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span>Reservar</button>
+            <button class="btn btn-primary btn-reserva">
+              <span class="oi oi-plus"></span>Reservar
+            </button>
           </div>
         </div>
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-
-          <img src="images/playa2.jpg" alt="Responsive image" class="card-img-top">
-          <div class="card-header">
-            España
-          </div>
+        <div
+          class="
+            card card-hotel
+            d-flex
+            flex-column
+            justify-content-between
+            ml-2
+          "
+        >
+          <img
+            src="images/playa2.jpg"
+            alt="Responsive image"
+            class="card-img-top"
+          />
+          <div class="card-header">España</div>
           <div class="card-body">
             <h5 class="card-title">Hotel Barcelona</h5>
-            <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
+            <p class="card-text">
+              Hotel ubicado en pleno centro de Barcelona a pocos metros de la
+              playa.
+            </p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span>Reservar</button>
+            <button class="btn btn-primary btn-reserva">
+              <span class="oi oi-plus"></span>Reservar
+            </button>
           </div>
         </div>
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-
-          <img src="images/playa2.jpg" alt="Responsive image" class="card-img-top">
-          <div class="card-header">
-            España
-          </div>
+        <div
+          class="
+            card card-hotel
+            d-flex
+            flex-column
+            justify-content-between
+            ml-2
+          "
+        >
+          <img
+            src="images/playa2.jpg"
+            alt="Responsive image"
+            class="card-img-top"
+          />
+          <div class="card-header">España</div>
           <div class="card-body">
             <h5 class="card-title">Hotel Barcelona</h5>
-            <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
+            <p class="card-text">
+              Hotel ubicado en pleno centro de Barcelona a pocos metros de la
+              playa.
+            </p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span>Reservar</button>
+            <button class="btn btn-primary btn-reserva">
+              <span class="oi oi-plus"></span>Reservar
+            </button>
           </div>
         </div>
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-
-          <img src="images/playa2.jpg" alt="Responsive image" class="card-img-top">
-          <div class="card-header">
-            España
-          </div>
+        <div
+          class="
+            card card-hotel
+            d-flex
+            flex-column
+            justify-content-between
+            ml-2
+          "
+        >
+          <img
+            src="images/playa2.jpg"
+            alt="Responsive image"
+            class="card-img-top"
+          />
+          <div class="card-header">España</div>
           <div class="card-body">
             <h5 class="card-title">Hotel Barcelona</h5>
-            <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
+            <p class="card-text">
+              Hotel ubicado en pleno centro de Barcelona a pocos metros de la
+              playa.
+            </p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span>Reservar</button>
+            <button class="btn btn-primary btn-reserva">
+              <span class="oi oi-plus"></span>Reservar
+            </button>
           </div>
         </div>
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-
-          <img src="images/playa2.jpg" alt="Responsive image" class="card-img-top">
-          <div class="card-header">
-            España
-          </div>
+        <div
+          class="
+            card card-hotel
+            d-flex
+            flex-column
+            justify-content-between
+            ml-2
+          "
+        >
+          <img
+            src="images/playa2.jpg"
+            alt="Responsive image"
+            class="card-img-top"
+          />
+          <div class="card-header">España</div>
           <div class="card-body">
             <h5 class="card-title">Hotel Barcelona</h5>
-            <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa.</p>
+            <p class="card-text">
+              Hotel ubicado en pleno centro de Barcelona a pocos metros de la
+              playa.
+            </p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span>Reservar</button>
+            <button class="btn btn-primary btn-reserva">
+              <span class="oi oi-plus"></span>Reservar
+            </button>
           </div>
         </div>
       </div>
-
     </div>
-
 
     <footer>
       <div class="row">
         <div class="col-sm-4 d-flex flex-column">
-        <a href="#">Faceboock</a>
-        <a href="#">Instagram</a>
-        <a href="#">Twitter</a>
+          <a href="#">Faceboock</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
         </div>
-        <div class="col-sm-4"> 
-      <address>
-        <p><span class="oi oi-home footer-address-icon"></span>Colombia, Antioquia</p>
-        <p><span class="oi oi-inbox footer-address-icon"></span> Contact@Hotelea.com</p>
-      </address>
+        <div class="col-sm-4">
+          <address>
+            <p>
+              <span class="oi oi-home footer-address-icon"></span>Colombia,
+              Antioquia
+            </p>
+            <p>
+              <span class="oi oi-inbox footer-address-icon"></span>
+              Contact@Hotelea.com
+            </p>
+          </address>
         </div>
         <div class="col-sm-4 d-flex flex- align-items-end">
-        <a href="#">Nosotros</a>
-        <a href="#">Precios</a>
-        <a href="#">Terminos</a>
-        <a href="#">Contactos</a>
+          <a href="#">Nosotros</a>
+          <a href="#">Precios</a>
+          <a href="#">Terminos</a>
+          <a href="#">Contactos</a>
         </div>
       </div>
     </footer>

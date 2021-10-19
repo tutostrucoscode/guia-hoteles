@@ -135,7 +135,7 @@
               Hotel ubicado en pleno centro de Barcelona a pocos metros de la
               playa.
             </p>
-            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
           </div>
           <div>
             <button class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Consulte las promociones vigentes">
@@ -589,7 +589,31 @@
       $(function() {
         $("[data-toggle='tooltip']").tooltip();
         $("[data-toggle='popover']").popover();
+        $(".carousel").carousel({
+          interval: 2000
+        });
 
+        $("#contacto").on('show.bs.modal', function (e) {
+          console.log('el modal contacto se esta mostrando');
+          
+          $('#contactoBtn').removeClass('btn-outline-success');
+          $('#contactoBtn').addClass('btn-primary');
+          $('#contactoBtn').prop('disabled', true);
+
+        });
+
+        $("#contacto").on('shown.bs.modal', function (e) {
+          console.log('el modal contacto se mostro');
+        });
+
+        $("#contacto").on('hide.bs.modal', function (e) {
+          console.log('el modal contacto se oculto');
+        });
+
+        $("#contacto").on('hidden.bs.modal', function (e) {
+          console.log('el modal contacto se mostro');
+          $('#contactoBtn').prop('disabled', false);
+        });
       });
     </script>
   </body>
